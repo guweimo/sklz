@@ -1,0 +1,86 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    background: #000;
+    z-index: 7777;
+}
+.dialog-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    margin: 0;
+    z-index: 8888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dialog {
+    position: relative;
+    margin: 0 auto 50px;
+    background: #000;
+    opacity: 0.8;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    width: 50%;
+}
+.dialog-header {
+    padding: 20px 20px 10px;
+    position: relative;
+    text-align: center;
+}
+.dialog-title {
+    line-height: 24px;
+    font-size: 30px;
+    color: #fff;
+}
+.dialog-header-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.dialog-close {
+    color: #bbb;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: baseline;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+}
+.dialog-close:hover {
+    color: #409eff;
+}
+.dialog-body {
+    padding: 30px 20px;
+    color: #fff;
+    font-size: 18px;
+    word-break: break-all;
+}
+.dialog-footer {
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.dialog-body-item {
+    display: flex;
+}
+.right {
+    margin-left: auto;
+}

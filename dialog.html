@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .modal {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: .5;
+            background: #000;
+            z-index: 7777;
+        }
+        .dialog-wrapper {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: auto;
+            margin: 0;
+            z-index: 8888;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dialog {
+            position: relative;
+            margin: 0 auto 50px;
+            background: #fff;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            box-sizing: border-box;
+            width: 50%;
+        }
+        .dialog-header {
+            padding: 20px 20px 10px;
+        }
+        .dialog-title {
+            line-height: 24px;
+            font-size: 18px;
+            color: #303133;
+        }
+        .dialog-header-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 0;
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .dialog-close {
+            color: #909399;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            vertical-align: baseline;
+            display: inline-block;
+            -webkit-font-smoothing: antialiased;
+        }
+        .dialog-close:hover {
+            color: #409eff;
+        }
+        .dialog-body {
+            padding: 30px 20px;
+            color: #606266;
+            font-size: 14px;
+            word-break: break-all;
+        }
+        .dialog-footer {
+            padding: 10px 20px 20px;
+            text-align: right;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal"></div>
+    <div class="dialog-wrapper">
+        <div class="dialog">
+            <div class="dialog-header">
+                <span class="dialog-title">title</span>
+                <button type="button" aria-label="Close" class="dialog-header-btn"><span class="dialog-close">x</span></button>
+            </div>
+            <div class="dialog-body">
+                <div>test</div>
+            </div>
+            <div class="dialog-footer">
+                <button>ce</button>
+                <button>ce</button>
+            </div>
+        </div>
+    </div>
+<script>
+</script>
+</body>
+</html>
+

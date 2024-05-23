@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扫雷</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #282C34;
+        }
+        #id-div-mine {
+            position: relative;
+        }
+        .row {
+            width: 30px;
+            display: block;
+            float: left;
+            margin-left: 2px;
+            /*flex-direction: column;*/
+            /*justify-content: center;*/
+        }
+        .cell {
+            margin: 2px 0;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            /*border: 1px solid #ccc;*/
+            font-size: 0;
+            border-radius: 2px;
+            font-weight: bold;
+            background-color: #129ED1;
+        }
+        .cell:hover {
+            background-color: #61dafb;
+        }
+        .opened:hover {
+            background-color: #eeeeee;
+        }
+        .opened {
+            font-size: 14px;
+            background-color: #eeeeee;
+        }
+        .cell[data-number="0"] {
+            font-size: 0;
+        }
+        .cell[data-number="1"] {
+            color: #34AABD;
+        }
+        .cell[data-number="2"] {
+            color: #80bf2e;
+        }
+        .cell[data-number="3"] {
+            color: #dc143c;
+        }
+    </style>
+</head>
+<body>
+    <script src="src/sklz.js"></script>
+</body>
+</html>
